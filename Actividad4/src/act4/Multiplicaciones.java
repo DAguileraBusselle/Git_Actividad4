@@ -43,9 +43,9 @@ public class Multiplicaciones {
 
 	private static void potencia(Scanner sc) {
 		System.out.println("Introduzca un número a ser base");
-		double numBase = Integer.parseInt(sc.nextLine());
+		double numBase = Double.parseDouble(sc.nextLine());
 		System.out.println("Introduzca otro número a ser exponente");
-		double numExpo = Integer.parseInt(sc.nextLine());;
+		double numExpo = Double.parseDouble(sc.nextLine());;
 		
 		double resultado = Math.pow(numBase, numExpo);
 		System.out.println("El resultado es " + Math.round(resultado));
