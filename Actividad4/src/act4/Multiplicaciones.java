@@ -6,12 +6,17 @@ import java.lang.Math;
 public class Multiplicaciones {
 	public static void main(String[] args) {
 	
-	boolean continuar = true;
-	int opcion;	
-	Scanner sc = new Scanner(System.in);	
+	Scanner sc = new Scanner(System.in);		
+	sc.close();
+	}
+
 	
-	while (continuar) {
-		opcion = solicitarOpcion(sc);
+
+	static void multiplicaciones(Scanner sc) {
+		boolean continuar = true;
+		int opcion;
+		while (continuar) {
+		opcion = solicitarOpcionMultiplicacion(sc);
 		
 		switch (opcion) {
 		case 1:
@@ -30,13 +35,16 @@ public class Multiplicaciones {
 			// potencia
 			potencia(sc);
 			break;
+		default:
+			//salir de esta parte de la app
+			continuar = false;
+			break;
 			}
 		}
 		
-	sc.close();
 	}
 
-	
+
 
 	private static void potencia(Scanner sc) {
 		System.out.println("Introduzca un número a ser base");
@@ -87,24 +95,25 @@ public class Multiplicaciones {
 	}
 
 
-	private static int solicitarOpcion(Scanner sc) {
+	private static int solicitarOpcionMultiplicacion(Scanner sc) {
 		int opcion = -1;
 
 		do {
 			try {
 				System.out.println("\nIntroduce la acción que desea realizar");
 				System.out.println("1 - para multiplicar dos números reales\n" + "2 - para multiplicar dos números enteros\n"
-						+ "3 - para multiplicar tres números reales\n" + "4 - para calcular una potencia\n");
+						+ "3 - para multiplicar tres números reales\n" + "4 - para calcular una potencia\n"
+						+ "5 - para finalizar");
 				opcion = Integer.parseInt(sc.nextLine());
 
-				if (opcion < 0 || opcion > 4) {
+				if (opcion < 0 || opcion > 5) {
 					System.out.println("El valor introducido no es válido");
 				}
 			} catch (NumberFormatException e) {
 				System.out.println("El valor debe ser numérico");
 			}
 
-		} while (opcion < 0 || opcion > 4);
+		} while (opcion < 0 || opcion > 5);
 
 		return opcion;
 	}
