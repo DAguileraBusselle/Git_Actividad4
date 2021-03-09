@@ -4,13 +4,8 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class Multiplicaciones {
-	public static void main(String[] args) {
 	
 	Scanner sc = new Scanner(System.in);		
-	sc.close();
-	}
-
-	
 
 	static void multiplicaciones(Scanner sc) {
 		boolean continuar = true;
@@ -53,7 +48,7 @@ public class Multiplicaciones {
 		double numExpo = Integer.parseInt(sc.nextLine());;
 		
 		double resultado = Math.pow(numBase, numExpo);
-		System.out.println("El resultado es " + resultado);
+		System.out.println("El resultado es " + Math.round(resultado));
 		
 	}
 

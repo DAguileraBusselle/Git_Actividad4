@@ -14,20 +14,20 @@ public class Main {
 			
 			switch (opcion) {
 			case 1:
-				// producto de dos numeros reales
+				// suma
 				//(sc);
 				break;
 			case 2:
-				// producto de dos numeros enteros
+				// resta
 				//(sc);
 				break;
 			case 3:
-				// producto de 3 numeros reales
+				// producto
 				Multiplicaciones.multiplicaciones(sc);
 				break;
 			case 4:
-				// potencia
-				//(sc);
+				// division
+				Divisiones.divisiones(sc);
 				break;
 			default:
 				//salir de esta parte de la app
