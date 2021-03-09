@@ -19,7 +19,7 @@ public class Main {
 				break;
 			case 2:
 				// resta
-				//(sc);
+				Restas.opcionesResta(sc);
 				break;
 			case 3:
 				// producto
