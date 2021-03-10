@@ -61,7 +61,7 @@ public class Multiplicaciones {
 		double numReal3 = Double.parseDouble(sc.nextLine());;
 		
 		double resultado = numReal1 * numReal2 * numReal3;
-		System.out.println("El resultado es " + resultado);
+		System.out.println("El resultado es " + Math.round(resultado*100.0)/100.0);
 		
 	}
 
@@ -73,7 +73,7 @@ public class Multiplicaciones {
 		double numReal2 = Double.parseDouble(sc.nextLine());;
 		
 		double resultado = numReal1 * numReal2;
-		System.out.println("El resultado es " + resultado);
+		System.out.println("El resultado es " + Math.round(resultado*100.0)/100.0);
 		
 	}
 	
