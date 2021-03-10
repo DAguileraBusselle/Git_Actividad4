@@ -30,7 +30,10 @@ public class Restas {
 			case 4:
 				restaValorAcum(sc);
 				break;
-
+				//en la resta acumulada hemos interpretado que como pueden salir valores negativos de las otras restas, el valor sera el que tenga que salir matematicamente
+				//aunque si tuviera que restar si o si para que la resta acumulada siempre tienda al infinito negativo, no es mas que poner un if que evalue el valor (+ o -) de la operacion 
+				//y sume el valor a la variable global si el resultado es negativo y lo reste si es positivo.
+				
 			case 0:
 				continuar = false;
 				System.out.println("Fin del programa");
@@ -63,9 +66,9 @@ public class Restas {
 		
 		double resul3 = n1 - n2 - n3;
 		
-		System.out.println("El resultado es: "+ resul3);
+		System.out.println("El resultado es: "+ Math.round(resul3*1000.0)/1000.0);
 		
-		VALOR_ACUM -= resul3;
+		VALOR_ACUM -= Math.round(resul3*1000.0)/1000.0;
 
 	}
 
@@ -92,9 +95,9 @@ public class Restas {
 		
 		double resul1 = n1 - n2;
 		
-		System.out.println("El resultado es: "+ resul1);
+		System.out.println("El resultado es: "+ Math.round(resul1*1000.0)/1000.0);
 		
-		VALOR_ACUM -= resul1;
+		VALOR_ACUM -= Math.round(resul1*10000.0)/1000.0;
 	}
 	private static int solicitarOpcion(Scanner sc) {
 		int opcion = -1;

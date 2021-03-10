@@ -48,7 +48,7 @@ public class Multiplicaciones {
 		double numExpo = Double.parseDouble(sc.nextLine());;
 		
 		double resultado = Math.pow(numBase, numExpo);
-		System.out.println("El resultado es " + Math.round(resultado));
+		System.out.println("El resultado es " + resultado);
 		
 	}
 
