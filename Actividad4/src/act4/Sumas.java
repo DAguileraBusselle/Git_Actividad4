@@ -47,7 +47,7 @@ public class Sumas {
 
 	private static void sumaAcumulada(Scanner sc) {
 		System.out.println("\nEste es el valor acumulado " + VALOR_ACUM);
-		System.out.println("Intruce el número a sumar al  valor acumulado");
+		System.out.println("Intruce el numero a sumar al  valor acumulado");
 		double n1 = Double.parseDouble(sc.nextLine());
 		
 		double resultado4 = VALOR_ACUM + n1;
@@ -57,11 +57,11 @@ public class Sumas {
 	}
 
 	private static void sumaTresReales(Scanner sc) {
-		System.out.println("Introduce el primer número real");
+		System.out.println("Introduce el primer numero real");
 		double realUno = Double.parseDouble(sc.nextLine());
-		System.out.println("Introduce el segundo número real");
+		System.out.println("Introduce el segundo numero real");
 		double realDos = Double.parseDouble(sc.nextLine());
-		System.out.println("Introduce el tercer número real");
+		System.out.println("Introduce el tercer numero real");
 		double realTres = Double.parseDouble(sc.nextLine());
 		
 		double resultado3 = realUno + realDos + realTres;
@@ -72,9 +72,9 @@ public class Sumas {
 
 	
 	private static void sumaEnteros(Scanner sc) {
-		System.out.println("Introduce el primer número entero");
+		System.out.println("Introduce el primer numero entero");
 		int enteroUno = Integer.parseInt(sc.nextLine());
-		System.out.println("Introduce el segundo número entero");
+		System.out.println("Introduce el segundo numero entero");
 		int enteroDos = Integer.parseInt(sc.nextLine());
 		
 		int resultado2 = enteroUno + enteroDos;
@@ -85,9 +85,9 @@ public class Sumas {
 
 	
 	private static void sumaReales(Scanner sc) {
-		System.out.println("Introduce el primer número real");
+		System.out.println("Introduce el primer numero real");
 		double realUno = Double.parseDouble(sc.nextLine());
-		System.out.println("Introduce el segundo número real");
+		System.out.println("Introduce el segundo numero real");
 		double realDos = Double.parseDouble(sc.nextLine());
 		
 		double resultado = realUno + realDos;
@@ -101,17 +101,17 @@ public class Sumas {
 
 		do {
 			try {
-				System.out.println("\nIntroduce la acción que desea realizar");
-				System.out.println("1 - para sumar dos números reales\n" + "2 - para sumar dos números enteros\n"
-						+ "3 - para sumar tres números reales\n" + "4 - para hacer una suma acumulativa\n"
+				System.out.println("\nIntroduce la accion que desea realizar");
+				System.out.println("1 - para sumar dos numeros reales\n" + "2 - para sumar dos numeros enteros\n"
+						+ "3 - para sumar tres numeros reales\n" + "4 - para hacer una suma acumulativa\n"
 						+ "5 - para finalizar");
 				opcion = Integer.parseInt(sc.nextLine());
 
 				if (opcion < 0 || opcion > 5) {
-					System.out.println("El valor introducido no es válido");
+					System.out.println("El valor introducido no es valido");
 				}
 			} catch (NumberFormatException e) {
-				System.out.println("El valor debe ser numérico");
+				System.out.println("El valor debe ser numerico");
 			}
 
 		} while (opcion < 0 || opcion > 5);

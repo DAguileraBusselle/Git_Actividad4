@@ -7,7 +7,7 @@ public class Restas {
 	public static double VALOR_ACUM = 0;
 	
 
-	public static void opcionesResta(Scanner sc2) {
+	public static void resta(Scanner sc2) {
 		Scanner sc = new Scanner(System.in);
 		int opcion = -1;
 		boolean continuar = true;

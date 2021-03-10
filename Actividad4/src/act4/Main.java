@@ -15,11 +15,11 @@ public class Main {
 			switch (opcion) {
 			case 1:
 				// suma
-				//(sc);
+				Sumas.sumas(sc);
 				break;
 			case 2:
 				// resta
-				Restas.opcionesResta(sc);
+				Restas.resta(sc);
 				break;
 			case 3:
 				// producto
