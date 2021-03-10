@@ -36,7 +36,6 @@ public class Restas {
 				
 			case 0:
 				continuar = false;
-				System.out.println("Fin del programa");
 				break;
 			}
 		}
